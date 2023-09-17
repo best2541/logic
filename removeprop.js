@@ -6,7 +6,7 @@ const ob = {
 }
 
 function removeProperty(obj, prop) {
-    if (obj[prop]) {
+    if (prop in obj) {
         delete obj[prop]
         return true
     } else {
